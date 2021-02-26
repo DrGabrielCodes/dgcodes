@@ -31,18 +31,18 @@ main {
 /*Stylings of links, buttons go here*/
 a {
     text-decoration: none;
-    color: rgba(255, 0, 0, 0.733);
+    color: rgb(9, 2, 78);
 }
 a:hover {
     background: rgba(255, 255, 255, 0.58);
     border-radius: 5px;
-    color: blue;
+    color: rgb(66, 2, 11);
 }
 .button {
     min-width: 200px;
     height:50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 110%;
+    font-size: 90%;
    margin-left: 5%;
    cursor: pointer;
 }
@@ -95,10 +95,10 @@ blockquote {
 }
 
 h2.intro-heading, .section-heading.section-heading {
-    font-family: hello-honey;
-     font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+     font-size: 200%;
 }
-p, section, li > a {
+.socials, li > a {
     font-family: hello;
      font-size: 25px;
 }
@@ -121,15 +121,10 @@ p, section, li > a {
 }
 .nav-area, .contact-area{
     
-    margin:10px auto;
+    margin:0 auto;
     background-color: white;
 }
-.nav-area {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    left: 0;
-}
+
 .contact-area {
     width: 100%;
     color: black;
@@ -227,11 +222,7 @@ font-family:Georgia, 'Times New Roman', Times, serif;
 padding: 0px;
 margin: 5px;
 }
-.project-iframe-section {
-    width: 100%;
-    min-width: 80vh;
-    background-color: rgba(255, 255, 255, 0.58);
-}
+
 .section-container {
     margin:0 auto;
     padding:10px 20px;
@@ -387,5 +378,5 @@ on small screens but displays for wide screen views*/
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .form-item.message {
-    row-s: 35;
+    -ms-grid-row-span: 35;
 }
