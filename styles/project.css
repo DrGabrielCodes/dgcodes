@@ -1,0 +1,112 @@
+/*The whole body stylings go here*/
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background: white;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.iframe-body-container {
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    display: relative;
+    min-height: 100vh;
+    }
+
+main {
+    flex: 1 0 auto;
+}
+@font-face {
+    font-family: acoustic;
+    src:url('../fonts/acoustica/Acoustica\ South.ttf')
+}
+/*Stylings of links, buttons go here*/
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.733);
+}
+a:hover {
+    background: rgba(255, 255, 255, 0.58);
+    border-radius: 5px;
+}
+.button {
+    min-width: 200px;
+    height:50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 110%;
+   margin-left: 5%;
+   cursor: pointer;
+}
+.button:hover {
+    background: rgba(255, 255, 255, 0.58);
+    border-radius: 5px;
+}
+blockquote {
+    padding:0;
+    margin:7px;
+}
+.recommendations-iframe, .iframe {
+    display: none;
+    height:90vh;
+    width: 100%;
+    border:0px;
+    margin: 0 auto;
+}
+.project {
+background: rgba(36, 36, 36, 0.58);
+border-radius: 20px;
+padding: 10px;
+margin:20px auto;
+cursor: pointer;
+word-wrap: break-word;
+word-break:break-word;
+max-width: 300px;
+max-height: 300px;
+text-align: center;
+box-shadow: rgba(0, 0, 0, 0.7) 7px 7px 5px;
+}
+.project.project-2, .project.project-5 {
+background: rgb(2, 6, 219);
+
+}
+.project.project-4, .project.project-6{
+background: rgba(255, 0, 0, 0.849);
+
+}
+.project:hover {
+padding: 12px;
+box-shadow: rgba(0, 0, 0, 0.7) 7px 8px inset;
+}
+.project-iframe-footer {
+position: absolute;
+bottom: 0;
+left: 0;
+width:100%;
+background: rgba(129, 129, 129, 0.555);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.iframe-main-contents {
+margin: 0 auto;
+width: 100%;
+}
+

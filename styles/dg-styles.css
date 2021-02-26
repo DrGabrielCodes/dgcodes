@@ -1,0 +1,391 @@
+/*The whole body stylings go here*/
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background: white;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/*Stylings of links, buttons go here*/
+a {
+    text-decoration: none;
+    color: rgba(255, 0, 0, 0.733);
+}
+a:hover {
+    background: rgba(255, 255, 255, 0.58);
+    border-radius: 5px;
+    color: blue;
+}
+.button {
+    min-width: 200px;
+    height:50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 110%;
+   margin-left: 5%;
+   cursor: pointer;
+}
+.button:hover {
+    background: rgba(255, 255, 255, 0.58);
+    border-radius: 5px;
+}
+blockquote {
+    padding:0;
+    margin:7px;
+}
+
+/*Stylings of the header and footer go here*/
+.main-header, .main-footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+.main-header {
+    position:relative;
+    
+}
+
+@font-face {
+    font-family: acoustica;
+    src: url('../fonts/acoustica/Acoustica\ South.ttf');
+
+}
+@font-face {
+    font-family: harryporter;
+    src: url('../fonts/font-favorite-collection/HARRYP__.TTF');
+
+}
+@font-face {
+    font-family: british;
+    src: url('../fonts/font-favorite-collection/British\ Shorthair.otf');
+
+}
+@font-face {
+    font-family: hello;
+    src: url('../fonts/font-favorite-collection/Hello.otf');
+
+}
+@font-face {
+    font-family: hello-honey;
+    src: url('../fonts/font-favorite-collection/hello\ honey.otf');
+
+}
+
+h2.intro-heading, .section-heading.section-heading {
+    font-family: hello-honey;
+     font-size: 60px;
+}
+p, section, li > a {
+    font-family: hello;
+     font-size: 25px;
+}
+.main-heading{
+    font-family:'Courier New', Courier, monospace;
+    font-family: harryporter;
+    font-size: 55px;
+    padding:30px;
+    margin: 0 auto;
+}
+.main-contents{
+    margin: 0 auto;
+}
+.motto {
+    font-style: italic;
+    font-family: british;
+    font-size: 200%;
+    margin: 0 auto;
+    padding: 0;
+}
+.nav-area, .contact-area{
+    
+    margin:10px auto;
+    background-color: white;
+}
+.nav-area {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    left: 0;
+}
+.contact-area {
+    width: 100%;
+    color: black;
+    display: inline-flex;
+    flex-flow: row wrap;
+justify-content: center;
+align-content: center;
+
+}
+
+.socials, .nav-list-item {
+    color: white;
+    
+    background: black;
+    padding: 5px;
+}
+.socials {
+    display: inline-block;
+    margin: 0.5rem;
+}
+.socials:hover {
+    color: black;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: rgba(0, 0, 0, 0.7) 5px 5px 5px inset;
+    transition: 0.5s;
+}
+.nav-list, .footer-nav-list {
+    list-style-type: none;
+}
+.footer-body {
+    margin-bottom: 0px;
+    padding-bottom: 5px;;
+}
+.nav-list {
+    margin: 0 auto;
+}
+.nav-list > li {
+    display: inline-block;
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+
+.nav-list-item:hover {
+    
+    color: black;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: rgba(0, 0, 0, 0.7) 5px 5px 5px inset;
+    transition: 0.5s;
+}
+
+.footer-nav-list-item {
+color: white;
+background: rgba(129, 129, 129, 0.555);
+border-radius: 3px;
+padding: 2.5px;
+}
+
+.footer-nav-list-item:hover {
+    
+    color: black;
+    background: rgba(255, 255, 255, 0.58);
+    box-shadow: rgba(0, 0, 0, 0.7) 5px 5px 5px inset;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.footer-nav-list-items {
+    margin: 10px;
+    
+}
+.footer-copyright {
+    background: rgba(129, 129, 129, 0.555);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.dr-gabriel-codes {
+    color: rgb(13, 155, 0);
+}
+.dr-gabriel-codes:hover {
+    color: rgba(0, 0, 0, 0.9);
+    border-radius: 3px;
+    padding: 3px;
+}
+
+/*Stylings about section go here*/
+.body-container {
+    border: 0px;
+    margin: 0 auto;
+}
+
+.section-heading {
+text-align: center;
+font-family:Georgia, 'Times New Roman', Times, serif;
+padding: 0px;
+margin: 5px;
+}
+.project-iframe-section {
+    width: 100%;
+    min-width: 80vh;
+    background-color: rgba(255, 255, 255, 0.58);
+}
+.section-container {
+    margin:0 auto;
+    padding:10px 20px;
+    width: 95%;
+
+    }
+    .article-div {
+        margin-bottom: 20px;
+    }
+.section-container.section-container-1 {
+    margin-top: 0;
+    color: white;
+    background-image:linear-gradient(120deg, rgb(0, 0, 0), 70%, rgba(255, 255, 255, 0.61));
+}
+
+.services-heading {
+    color: white;
+}
+.services-container {
+    background-image: linear-gradient(black 5%,white 10%, rgb(59, 59, 59) 14%, white 80%);
+    
+}
+.message-container {
+    background-image: linear-gradient(white, black);
+
+}
+
+.message-container, .services-container {
+   margin: 10px auto;
+}
+.section-container-social {
+    background: black;
+     color:white;
+    padding: 5px;
+    margin: 10px auto;
+}
+.section-container-social.contact {
+    background-image: radial-gradient(white 1%, black 20%,white 23%, black 60%, white 80%, black 90%);
+    color:white;
+    padding: 5px;
+    margin: 10px auto;
+    width: 95%;
+}
+.section-container-social-items {
+    text-align: center;
+    padding: 0;
+}
+
+.book-apointment-container{
+    padding: 30px;
+}
+
+/*This area has styles for floating my image to the left 
+with a clearfix hack*/
+.my-image{
+    max-width: 40vw;
+    max-height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    float:left;
+    margin-right: 15px;
+    
+}
+.section-container-1::after { 
+    content: "";
+    display: block;
+    clear:both;}
+
+/*Stylings for iframe additions or aside which is hidden
+on small screens but displays for wide screen views*/
+    
+.recommendations-iframe, .iframe {
+        display: none;
+        height:90vh;
+        width: 100%;
+        border:0px;
+        margin: 0 auto;
+    }
+
+
+/*stylings about clearfix and 3 column layout using media queries*/
+@media only screen and (min-width: 700px) {
+    .body-container::after {
+        content: "";
+        display: block;
+        clear:both;
+    }
+    .main-header {
+    width: 25%;
+    float: left;
+    height: 100%;
+}
+.footer {
+    width: 25%;
+    float: right; 
+    height: 100%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    right: 0;
+}
+.main-contents {
+    width: 50%;
+    float: left;
+}
+.nav-area {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    left: 0;
+}
+.recommendations-iframe, .iframe {
+    display: block;
+    padding:0;
+
+}
+.my-image{
+    max-width: 300px;
+}
+}
+
+.book-apointment-container {
+    text-align: center;
+    border: 1px solid black;
+    height: 30vh;
+    background-image: linear-gradient(155.8deg,black 5%, white 10%, black 60%, white 65%, black 70%, white 85%,  black 90%);
+}
+
+/*Stylings for forms and appointment bookings go here*/
+
+.form-item {
+    display: block;
+    min-height: 30px;
+    min-width: 60%;
+    margin-top: 3px;
+    margin-bottom: 15px;
+}
+
+
+.form-item:focus {
+    background: rgba(255, 255, 255, 0.9);
+}
+.services-item {
+    font-size: 90%;
+    background: white;
+    border: none;
+    outline: none;
+}
+
+.select-services {
+    font-size: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.form-item.message {
+    row-s: 35;
+}
