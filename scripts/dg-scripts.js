@@ -28,7 +28,7 @@ function ready() {
 
 
 function getAppointmentForm() {
-    location.href = 'select-service.html'
+    location.href = 'webpages/select-service.html'
 }
 
 
