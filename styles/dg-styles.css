@@ -210,7 +210,7 @@ padding: 2.5px;
     border-radius: 7px;
     padding: 3px;
 }
-.logo {
+.social-logo {
     display: block;
     width: 50px;
     height: 50px;
@@ -218,7 +218,7 @@ padding: 2.5px;
     padding: 0;
     margin: 0 auto;
 }
-.logo:hover{
+.social-logo:hover{
     padding: 3px;
 }
 /*Stylings about section go here*/
