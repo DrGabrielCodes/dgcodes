@@ -98,7 +98,7 @@ h2.intro-heading, .section-heading.section-heading {
     font-family: 'Times New Roman', Times, serif;
      font-size: 200%;
 }
-.socials, li > a {
+.socials, .nav-list-item, .footer-nav-list-item {
     font-family: hello;
      font-size: 25px;
 }
@@ -144,6 +144,7 @@ align-content: center;
 .socials {
     display: inline-block;
     margin: 0.5rem;
+    
 }
 .socials:hover {
     color: black;
@@ -202,14 +203,24 @@ padding: 2.5px;
 }
 
 .dr-gabriel-codes {
-    color: rgb(13, 155, 0);
+    color: rgb(6, 68, 1);
 }
 .dr-gabriel-codes:hover {
-    color: rgba(0, 0, 0, 0.9);
-    border-radius: 3px;
+    color: rgba(66, 1, 1, 0.9);
+    border-radius: 7px;
     padding: 3px;
 }
-
+.logo {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: white;
+    padding: 0;
+    margin: 0 auto;
+}
+.logo:hover{
+    padding: 3px;
+}
 /*Stylings about section go here*/
 .body-container {
     border: 0px;
@@ -242,7 +253,7 @@ margin: 5px;
     color: white;
 }
 .services-container {
-    background-image: linear-gradient(black 5%,white 10%, rgb(59, 59, 59) 14%, white 80%);
+    background-image: linear-gradient(black 11%,white 15%, rgb(59, 59, 59) 14%, white 80%);
     
 }
 .message-container {
