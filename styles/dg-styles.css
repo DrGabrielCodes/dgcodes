@@ -104,25 +104,31 @@ blockquote {
     src: url('../fonts/font-favorite-collection/Tall\ Films\ Expanded.ttf');
 
 }
-@font-face {
-    font-family: Flaticon;
-    src: url('../fonts/font-favorite-collection/Flaticon.ttf Films\ Expanded.ttf');
 
+@font-face {
+    font-family: poppins;
+    src: url('../fonts/font-favorite-collection/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: quicksand;
+    src: url('../fonts/font-favorite-collection/Quicksand-VariableFont_wght.ttf');
 }
 h2.intro-heading, .section-heading.section-heading {
     font-family: 'Times New Roman', Times, serif;
      font-size: 170%;
 }
 
+
 div{
-    font-family: Flaticon;
+    font-family: poppins;
+
 }
 .socials, .nav-list-item, .footer-nav-list-item {
     font-family: hello;
      
 }
 .main-heading{
-    font-family:'Courier New', Courier, monospace;
     font-family: harryporter;
     font-size: 55px;
     padding:30px;
@@ -150,7 +156,7 @@ h3.intro {
 color: red;
 }
 .job2 {
-    color:blue;
+    color:rgb(28, 28, 255);
 }
 .nav-area, .contact-area{
     
