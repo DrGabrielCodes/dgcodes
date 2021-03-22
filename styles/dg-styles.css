@@ -303,7 +303,7 @@ margin: 5px;
     color: white;
 }
 .services-container {
-    background-image: linear-gradient(black 0%, white 3%, black 9%,white 13%, rgb(59, 59, 59) 12%, white 80%);   
+    background-image: linear-gradient(black 0%, white 9%, rgb(59, 59, 59) 10%, white 80%);   
 }
 .services-list{
     border-left: 2px solid black;
@@ -470,4 +470,7 @@ on small screens but displays for wide screen views*/
     font-size: 1.2em;
     font-weight: bold;
 
+}
+.email{
+    word-wrap: break-word;
 }

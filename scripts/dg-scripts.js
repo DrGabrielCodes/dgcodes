@@ -4,6 +4,7 @@ if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else { ready() }
 
+
 function ready() {
     switch (document.title) {
         case "Dr. Gabriel Codes": var appointmentBooking = document.getElementsByClassName("booking-btn")[0]
@@ -33,6 +34,10 @@ function ready() {
     }
 }
 
+let Name = document.getElementById("name").value;
+let time = document.getElementById('appointment-time').value;
+ let date = document.getElementById('date').value;
+ let phoneNumber = document.getElementById('phone-number').value;
 
 
 
@@ -51,41 +56,50 @@ function getAppointmentForm() {
 }
 
 
-    function submitForm() {
-        var name = document.getElementById("name").value
-        var time = document.getElementById('appointment-time').value
-        var date = document.getElementById('date').value
-        var phoneNumber = document.getElementById('phone-number').value
-        /*let inputValues = [name, time, date, phoneNumber]
+    function submitForm(e) {
+        e.preventDefault();
+        let inputValues = [Name, time, date, phoneNumber]
+
         for (var i =0; i < inputValues.length; i++){
-            let inputValue = inputValues[i]
+            let inputValue = inputValues
             if (inputValue.includes("")) {
                 
                 alert('Please, complete necessary details to continue.')
             } else {
-                alert("Thank you " + name +
+                clearForm();
+                alert("Thank you " + Name +
                     ", you have successfully made an appointment with Pegasus Eyecare Consultants. Have a great day!");
-            } return;
+                        
+            } return
         }
         
-    }*/
-        switch (phoneNumber && name && date && time) {
-            case "": alert('Please, complete necessary details to continue.');
-                break;
-            default: alert(`Thank you ${name}, you have successfully booked an appointment with Dr. Gabriel Cdes. Have a great day!`)
-        }
-
-        /*if (phoneNumber || name || date || time == "") {
-            alert('Please, complete necessary details to continue.')
-        } else {
-            alert("Thank you " + name +
-                ", you have successfully made an appointment with Pegasus Eyecare Consultants. Have a great day!");
-        }*/
-
-        //[name, time, date, phoneNumber].includes(""){alert('Please, complete necessary details to continue.')
     }
+        // switch (phoneNumber && Name && date && time) {
+        //     case "": alert('Please, complete necessary details to continue.');
+        //         break;
+        //     default: alert(`Thank you ${Name}, you have successfully booked an appointment with Dr. Gabriel Cdes. Have a great day!`)
+        // }
 
+        // if (phoneNumber === '' || Name === '' || date ==='' || time == '') {
+        //     alert('Please, complete necessary details to continue.')
+        // } else {
+           
+        //     alert("Thank you " + Name +
+        //         ", you have successfully made an appointment with Pegasus Eyecare Consultants. Have a great day!");
+        
+        // }
 
+        
+
+        
+    
+
+const clearForm = () => {
+ // To clear inputs
+        Name = '';
+        phoneNumber = '';
+        email = '';
+}
 
     function appointmentDetails() {
         var servicesItem = document.getElementsByClassName("select-services")[0].value
