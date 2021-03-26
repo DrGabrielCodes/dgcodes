@@ -11,7 +11,7 @@
                     <span class="material-icons md-24 md-light" >chat</span> <a href="https://wa.me/{234}{7062141378}">
                     +2347062141378 </a> <br />
                     <span class="material-icons md-24 md-light" >email</span> <a class="company-email email"
-                    href="mailto:{drgabrielcodes@gmail.com}?subject={subject}&body={content}">
+                    href="mailto:{drgabrielcodes@gmail.com}?subject={subject}&body={content}" target="_blank">
                     drgabrielcodes@gmail.com</a>
                 <address href="https://maps.app.goo.gl/rVqjs8xKCQVECNr4A">
                     <span class="material-icons md-24 md-light" >location_on</span> Port Harcourt, Rivers State, Nigeria.
@@ -60,7 +60,7 @@
     </div>
 
 
-    <!-- <script src="/scripts/formValidation.js" ></script> -->
+    <script src="/scripts/formValidation.js" ></script>
     <script src="/scripts/dg-scripts.js" ></script>
 
 </body>

@@ -485,6 +485,7 @@ on small screens but displays for wide screen views*/
 }
 .green-bg {
     background-color:green;
+    color: white;
 }
 .black-bg {
     background-color: black;
@@ -501,6 +502,13 @@ on small screens but displays for wide screen views*/
     margin: 10px auto;
     padding: 10px;
     background-color: rgba(255, 3, 3, 0.829);
-    color: rgb(197, 197, 197);
+    color: rgb(235, 233, 233);
     border-radius: 5px;
+}
+.success-msg {
+    color: green;
+    background-color: rgb(228, 228, 228);
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
 }

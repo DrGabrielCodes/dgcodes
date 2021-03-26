@@ -3,16 +3,15 @@
 const appointmentBooking = document.querySelector("#booking-btn");
 const continueBtn = document.querySelector("#continue-btn");
 const appointmentBtn = document.getElementsByClassName("appointment-btn")[0];
-const alertMsg = document.querySelector('#alert-msg');
+let alertMessage = document.querySelector('#alert-msg');
+
 
 function selectService() {
     location.href = '/public/select-service.php';
 }
 
-
 const getAppointmentForm = () => {
-    
-    
+        
     console.log('Button clicked')
 
     var servicesItem = document.querySelectorAll(".select-services")[0].value;
@@ -21,12 +20,46 @@ const getAppointmentForm = () => {
 
         location.href = '/public/book-appointment.php'
     } else {
-        alertMsg.classList.add('error')
-        alertMsg.innerHTML = 'Please select a service before you continue.';
+        alertMessage.classList.add('error')
+        alertMessage.innerHTML = 'Please select a service before you continue.';
         setTimeout(() => alertMsg.remove(), 9000)
         return;
     }
 }
+
+
+
+
+const appointmentForm = document.querySelector('#appointment-form');
+console.log(appointmentForm);
+
+const appointmentDate = document.querySelector('#date');
+const time = document.querySelector('#appointment-time');
+const Name = document.querySelector('#name');
+const email = document.querySelector('#email');
+// const submitButton = document.querySelector('#appointment-btn');
+const phoneNumber = document.querySelector('#phone-number');
+
+function submitForm (e) {
+    if (Name.value === '' || email.value === '' || time.value === '' || appointmentDate.value === ''|| phoneNumber.value === ''){
+      e.preventDefault();
+      alertMessage = document.querySelector('#alert-msg');
+
+      alertMessage.classList.add('error')
+      alertMessage.innerHTML='Please complete the form enteries properly before submitting.'
+      setTimeout(() => alertMessage.remove(), 5000)
+
+      console.log('fill the form properly');
+      return false;
+      
+   } 
+   else {
+      console.log('message sent successfully')     
+return true;
+   }
+
+}
+appointmentForm.addEventListener('submit', submitForm);
 
 
 

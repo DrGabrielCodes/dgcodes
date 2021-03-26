@@ -58,8 +58,8 @@ require_once './public/partials/header.php';
 
             </section>
             <section class="section-container message-container">
-                <form id="message-form" method="POST" action="./formhandlers/messageFormHandler.php" onsubmit="return validateForm()">
-                    <!-- action="./formhandlers/messageFormHandler.php" -->
+                <form id="message-form"  action="./formhandlers/messageFormHandler.php" method="POST" >
+                <!-- action="./formhandlers/messageFormHandler.php" method="POST"-->
                     <p class="form-item">Wish to start a conversation or inquire about a
                         service? Please
                         leave a message. </p>
@@ -77,8 +77,8 @@ require_once './public/partials/header.php';
                         <textarea rows="6" cols="30" class="message form-item" name="message" id="message"
                             placeholder="Type your message" > </textarea></label>
                     </label>
-                    <label class="form-label" for="submit-btn">
-                        <button type="submit" id="submit-btn" class="button submit-btn" name="submit" >Send Message</button>
+                    <label class="form-label" for="submit">
+                        <button type="submit" id="submit-btn" class="button submit-btn" name="submit"  >Send Message</button>
                     </label>
                     <div id="alert-msg"></div>
 
