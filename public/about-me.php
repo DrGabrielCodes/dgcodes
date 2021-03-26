@@ -1,31 +1,7 @@
-﻿<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dr. Gabriel Codes</title>
-    <link rel="stylesheet" type="text/css" href="../styles/dg-styles.css" />
-    <script src="../scripts/dg-scripts.js" async></script>
-</head>
-
-<body class="body">
-    <div class="body-container">
-        <header class="main-header header">
-            <h1 class="main-heading portfolio-header logo">Dr Gabriel Codes</h1>
-            <span class="motto">...Imagination meets creativity.</span>
-            <nav class="navigation-area nav-area">
-                <ul class="nav-list">
-                    <li><a class="nav-link nav-list-item" href="../index.html">Home</a></li>
-                    <li><a class="nav-link nav-list-item" href="about-me.html">About</a></li>
-                    <li><a class="nav-link nav-list-item" href="contact-me.html">Contact me</a></li>
-
-                </ul>
-
-            </nav>
+﻿<?php 
+require_once './partials/header.php'; ?>
 
 
-        </header>
         <main class="main-contents">
             <section class="section-container section-container-1 section">
                 <h2 class="section-heading intro-heading">About me </h2>
@@ -113,50 +89,4 @@
 
         </main>
 
-        <footer class="main-footer footer">
-            <iframe class="recommendations-iframe" src="/webpages/recommendations.html"></iframe>
-            <section class="section-container-social">
-                <div class="section-container-social-items"> Connect with me on socials
-                    <div class="socials-area contact-area">
-
-                        <span><a class="socials" href="https://www.twitter.com/drgabrielnnamdi" target="_blank">
-                                twitter</a></span>
-                        <span>
-                            <a class="socials" href="https://www.facebook.com/gabriel.nnamdi1"> facebook</a>
-                        </span>
-                        <span> <a class="socials" href="https://www.instagram.com/gabriel4n44" target="_blank">
-                                Instagram</a></span>
-
-                    </div>
-                </div>
-            </section>
-
-            <hr id="footer-line" />
-            <div class="footer-body">
-                <Nav class="footer-nav">
-                    <ul class="footer-nav-list">
-                        <li class="footer-nav-list-items"><a class="footer-nav-list-item" href="about-me.html">About
-                                me</a>
-                        </li>
-                        <li class="footer-nav-list-items"><a class="footer-nav-list-item"
-                                href="terms-and-conditions.html">Terms </a></li>
-                        <li class="footer-nav-list-items"> <a class="footer-nav-list-item"
-                                href="privacy-policy.html">Privacy Policy</a></li>
-                    </ul>
-                </Nav>
-            </div>
-
-        </footer>
-    </div>
-    <div>
-        <div class="footer-copyright">
-            <i> © Copyright 2021 Dr. Gabriel Codes. All rights
-                reseverved.</i>
-            <div>web design by <a href="../index.html" class="dr-gabriel-codes">
-                    DrGabrielCodes</a>
-            </div>
-        </div>
-    </div>
-</body>
-
-</html>
+     <?php require_once './partials/footer.php' ?>

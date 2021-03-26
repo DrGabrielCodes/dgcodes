@@ -1,35 +1,9 @@
-﻿<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+﻿<?php
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dr. Gabriel Codes</title>
-    <link rel="stylesheet" type="text/css" href="styles/dg-styles.css" />
-    
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-    <script src="scripts/dg-scripts.js" async></script>
-</head>
-
-<body class="body">
-    <div class="body-container">
-        <header class="main-header header">
-            <h1 class="main-heading portfolio-header logo">Dr Gabriel Codes</h1>
-            <span class="motto">...Imagination meets creativity.</span>
-            <nav class="navigation-area nav-area">
-                <ul class="nav-list">
-                    <li><a class="nav-link nav-list-item" href="index.html">Home</a></li>
-                    <li><a class="nav-link nav-list-item" href="webpages/about-me.html">About</a></li>
-                    <li><a class="nav-link nav-list-item" href="webpages/contact-me.html">Contact me</a></li>
-
-                </ul>
-
-            </nav>
-
-
-        </header>
-        <main class="main-contents">
+require_once './public/partials/header.php';
+?>       
+       
+       <main class="main-contents">
             <section class="section-container section-container-1 section">
                 <h2 class="section-heading intro-greeting">Hi there!</h2>
                 
@@ -90,10 +64,10 @@
                         service? Please
                         leave a message. </p>
                     <label for="name"> Name
-                        <input type="text" class="name form-item" id="name" name="name" placeholder="Enter your name" required/>
+                        <input type="text" class="name form-item" id="name" name="name" placeholder="Enter your name" />
                     </label>
                     <label for="email"> Email
-                        <input type="email" class="email form-item" name="email" placeholder="Enter your email" id="email" required/>
+                        <input type="email" class="email form-item" name="email" placeholder="Enter your email" id="email" />
                     </label>
                     <label for="subject"> Subject
                         <input type="text" class="subject form-item" name="subject" id="subject"
@@ -101,7 +75,7 @@
                     </label>
                     <label for="message"> Message
                         <textarea rows="6" cols="30" class="message form-item" name="message" id="message"
-                            placeholder="Type your message" required> </textarea></label>
+                            placeholder="Type your message" > </textarea></label>
                     </label>
                     <label class="form-label" for="submit-btn">
                         <button type="submit" id="submit-btn" class="button submit-btn" name="submit" >Send Message</button>
@@ -112,72 +86,10 @@
             </section>
             <section class="section-container  book-apointment-container">
                 <span>Need a consultation?</span>
-                <button class="button booking-btn">Book your appointment now</button>
+                <button class="button booking-btn" id = "booking-btn" onclick="return selectService()">Book Your Appointment Now</button>
             </section>
 
         </main>
 
-        <footer class="main-footer footer">
-            <iframe class="recommendations-iframe" src="webpages/recommendations.html" frameborder="0"></iframe>
-
-            <section class="section-container-social">
-                <div>
-                    Give me a call today or email:</div> <span class="material-icons md-24 md-light" >call</span><a
-                    href="tel:{+2347062141378}">
-                    +2347062141378 </a> <br />
-                    <span class="material-icons md-24 md-light" >chat</span> <a href="https://wa.me/{234}{7062141378}">
-                    +2347062141378 </a> <br />
-                    <span class="material-icons md-24 md-light" >email</span> <a class="company-email email"
-                    href="mailto:{drgabrielcodes@gmail.com}?subject={subject}&body={content}">
-                    drgabrielcodes@gmail.com</a>
-                <address href="https://maps.app.goo.gl/rVqjs8xKCQVECNr4A">
-                    <span class="material-icons md-24 md-light" >location_on</span> Port Harcourt, Rivers State, Nigeria.
-                </address>
-                <div class="section-container-social-items"> Connect with me on socials
-                    <div class="socials-area contact-area">
-
-                        <span><a class="socials" href="https://www.twitter.com/drgabrielnnamdi" target="_blank">
-                                twitter</a></span>
-                        <span>
-                            <a class="socials" href="https://www.facebook.com/gabriel.nnamdi1" target="_blank"> facebook</a>
-                        </span>
-                        <span> <a class="socials" href="https://www.instagram.com/gabriel4n44" target="_blank">
-                                Instagram</a></span>
-
-                    </div>
-                </div>
-            </section>
-
-            <hr id="footer-line" />
-            <div class="footer-body">
-                <Nav class="footer-nav">
-                    <ul class="footer-nav-list">
-                        <li class="footer-nav-list-items"><a class="footer-nav-list-item"
-                                href="webpages/about-me.html">About me</a>
-                        </li>
-                        <li class="footer-nav-list-items"><a class="footer-nav-list-item"
-                                href="webpages/terms-and-conditions.html">Terms </a></li>
-                        <li class="footer-nav-list-items"> <a class="footer-nav-list-item"
-                                href="webpages/privacy-policy.html">Privacy Policy</a></li>
-                    </ul>
-                </Nav>
-            </div>
-
-        </footer>
-
-    </div>
-    <div>
-        <div class="footer-copyright">
-            <i> © Copyright 2021 Dr. Gabriel Codes. All rights
-                reseverved.</i>
-            <div>web design by <a href="index.html" class="dr-gabriel-codes">
-                    DrGabrielCodes</a>
-            </div>
-        </div>
-    </div>
-
-
-    <script src="./scripts/formValidation.js" async></script>
-</body>
-
-</html>
+       
+   <?php require_once './public/partials/footer.php' ?>
