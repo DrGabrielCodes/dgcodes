@@ -1,4 +1,8 @@
-﻿<?php require_once './partials/header.php' ?>   
+﻿<?php
+$title = "Privacy policy"
+
+?>
+<?php require_once './partials/header.php' ?>   
 
  <main class="main-contents">
        
@@ -10,3 +14,7 @@
     </main>
 
     <?php require_once './partials/footer.php' ?>
+    <script src="/scripts/formValidation.js"></script>
+</body>
+
+</html>

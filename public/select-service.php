@@ -1,7 +1,9 @@
-﻿<?php require_once './partials/header.php' 
-
-
+﻿
+<?php 
+$title = "Select services";
+require_once './partials/header.php'; 
 ?>
+
 
 <main class="main-contents">
     <section class="section-container services-container">
@@ -34,3 +36,6 @@
 </main>
 
 <?php require_once './partials/footer.php' ?>
+</body>
+
+</html>

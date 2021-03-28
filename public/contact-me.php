@@ -1,25 +1,16 @@
-﻿<?php require_once './partials/header.php' ?>
+﻿<?php
+$title = "Contact me"
+
+?>
+<?php require_once './partials/header.php' ?>
 <main class="main-contents">
     <section class="section-container message-container">
-        <form>
+        <div>
             <caption class="caption form-item">Have a business or project to discuss?
                 Please leave a message below here. </caption> <br />
-            <label for="name"> Name
-                <input type="text" class="name form-item" name="name" placeholder="Enter your name" />
-            </label>
-            <label for="email"> Email
-                <input type="email" class="email form-item" name="email" placeholder="Enter your email" />
-            </label>
-            <label for="subject"> Subject
-                <input type="text" class="subject form-item" name="subject" placeholder="Enter your message subject" />
-            </label>
-            <label for="message"> Message
-                <textarea rows="6" cols="30" class="message form-item" name="message" placeholder="Type your message"></textarea>
-            </label>
-            <label class="form-label">
-                <input type="submit" class="button " value="Send message" />
-            </label>
-        </form>
+        </div>
+        <?php require_once './partials/messageForm.php' ?>
+        
     </section>
 
     <section class="section-container-social contact">
@@ -46,52 +37,19 @@
         </div>
     </section>
     <section class="section-container section-container-1 forms-section">
+
         <p>
             <b> Or whish to book an appointment? Complete and submit the form below. </b>
         </p>
-        <form method="post">
-            <label for="select" class="services-label">
-                *Select:
-                <select class="select-services form-item">
-                    <option class="services-item"></option>
-                    <option class="services-item">Eye Consultation</option>
-                    <option class="services-item">Prescription lenses</option>
-                    <option class="services-item">Web design</option>
-                    <option class="services-item">Data analysis</option>
-                    <option class="services-item">Tutoring/Mentorship</option>
-
-                </select>
-            </label>
-            <label for="date" class="form-label">
-                Date of Appointment:
-                <input type="date" class="form-item" name="appointment-date" placeholder="Choose date" id="date" required />
-            </label>
-            <label for="time" class="form-label">
-                Appointment Time:
-                <input type="time" class="form-item" name="appointment-time" id="appointment-time" required />
-            </label>
-            <label for="Name" class="form-label">
-                Name:
-                <input type="text" class="form-item" name="client-name" id="name" placeholder="Enter your name..." required />
-            </label>
-            <label for="email" class="form-label">
-                Email:
-                <input type="email" class="form-item" name="email" placeholder="email@example.com" />
-            </label>
-            <label for="phonenumber" class="form-label">
-                Phone Number:
-                <input type="tel" class="form-item" name="phonenumber" id="phone-number" required />
-            </label>
-            <label for="submitBtn" class="form-label">
-                <button type="submit" name="submitBtn" class="button appointment-btn" id="appointment-btn"> Book
-                    Appointment </button>
-            </label>
-        </form>
-
+        <?php require_once './partials/appointmentForm.php' ?>
     </section>
-
 
 
 </main>
 
 <?php require_once './partials/footer.php' ?>
+<script src="/scripts/formValidation.js"></script>
+<script src="/scripts/appointmentForm.js"></script>
+</body>
+
+</html>

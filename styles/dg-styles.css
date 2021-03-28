@@ -48,11 +48,12 @@ a:hover {
    margin-left: 5%;
    cursor: pointer;
    border-radius: 15px;
-   box-shadow: rgba(0, 0, 0, 0.6) 4px 4px 3px ;
+   outline: none;
+   box-shadow: rgba(0, 0, 0, 0.6) 7px 7px 6px outset ;
    transition: 1s;
 }
 .button:hover {
-    background: rgba(82, 82, 82, 0.74);
+    background: rgba(128, 126, 126, 0.9);
     border-radius: 18px;
     box-shadow: rgba(0, 0, 0, 0.6) 5px 5px 5px inset;
     color: white;

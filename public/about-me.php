@@ -1,4 +1,9 @@
-﻿<?php 
+﻿<?php
+$title = "About me"
+
+?>
+
+<?php 
 require_once './partials/header.php'; ?>
 
 
@@ -63,30 +68,13 @@ require_once './partials/header.php'; ?>
 
             </section>
             <section class="section-container message-container">
-                <form>
-                    <caption class="caption form-item">Wish to get in touch for a consultation, inquiry or aboout a
-                        service, please
-                        leave a message. </caption> <br />
-                    <label for="name"> Name
-                        <input type="text" class="name form-item" name="name" placeholder="Enter your name" />
-                    </label>
-                    <label for="email"> Email
-                        <input type="email" class="email form-item" name="email" placeholder="Enter your email" />
-                    </label>
-                    <label for="subject"> Subject
-                        <input type="text" class="subject form-item" name="subject"
-                            placeholder="Enter your message subject" />
-                    </label>
-                    <label for="message"> Message
-                        <textarea rows="6" cols="30" class="message form-item" name="message"
-                            placeholder="Type your message"></textarea>
-                    </label>
-                    <label class="form-label">
-                        <input type="submit" class="button submit-btn" value="Send message" />
-                    </label>
-                </form>
+            <?php require_once './partials/messageForm.php' ?>
             </section>
 
         </main>
 
      <?php require_once './partials/footer.php' ?>
+     <script src="/scripts/formValidation.js"></script>
+</body>
+
+</html>
