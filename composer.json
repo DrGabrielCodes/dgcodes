@@ -1,0 +1,15 @@
+{
+    "name": "gabriel/dgcodes",
+    "authors": [
+        {
+            "name": "drgabrielcodes",
+            "email": "gabrieladirinwune@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "public\\": "public"
+        }
+    }
+}
