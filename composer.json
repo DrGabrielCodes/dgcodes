@@ -6,10 +6,6 @@
             "email": "gabrieladirinwune@gmail.com"
         }
     ],
-    "require": {},
-    "autoload": {
-        "psr-4": {
-            "public\\": "public"
-        }
-    }
+    "require": {}
+    
 }

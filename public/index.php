@@ -2,15 +2,14 @@
 // This makes a connection to the database
 // $pdo = new PDO('mysql:host=localhost;port=3306;dbname=dgcodes_database', 'root', '');
 // $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-require_once './formhandlers/database.php';
+require_once '../formhandlers/database.php';
 
 $title = "Dr. Gabriel Codes";
-require_once './public/partials/header.php';
+require_once './partials/header.php';
 ?>
 <main class="main-contents">
     <section class="section-container section-container-1 section">
         <h2 class="section-heading intro-greeting">Hi there!</h2>
-
         <h3 class="intro"> <span class="myname"> I'm Gabriel ,</span><span class="job1"> a front-end web developer</span> <span class="job2"> and an optometrist.</span> </h3>
         <h3 class="intro">Welcome to my world!</h3>
 
@@ -38,17 +37,17 @@ require_once './public/partials/header.php';
             hello my projects should appear here
         </div>
     </section>
-    <?php require_once './public/partials/services.php' ?>
+    <?php require_once './partials/services.php' ?>
 
     <section class="section-container message-container">
-    <?php require_once './public/partials/messageForm.php' ?>
+    <?php require_once './partials/messageForm.php' ?>
 
     </section>
 </main>
 
 
-<?php require_once './public/partials/footer.php' ?>
-<script src="/scripts/formValidation.js"></script>
+<?php require_once './partials/footer.php' ?>
+<script src="../scripts/formValidation.js"></script>
 </body>
 
 </html>
