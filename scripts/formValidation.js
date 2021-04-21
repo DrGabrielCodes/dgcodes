@@ -1,6 +1,7 @@
 // Variables from the message form in index.htm are here
 const msgForm = document.querySelector('#message-form');
 let alertMsg = document.querySelector('#alert-msg');
+
 const userName = document.querySelector('#name');
 const emailFrom = document.querySelector('#email');
 const subject = document.querySelector('#subject');
@@ -41,8 +42,7 @@ function validateForm(e) {
 }
 msgForm.addEventListener('submit', validateForm);
 
-console.log(msgForm['action']);
-console.log(document.title)
+
 
 
 function getAppointmentForm(e) {
@@ -53,8 +53,23 @@ function getAppointmentForm(e) {
 appointmentBooking.addEventListener('click', getAppointmentForm);
 
 
-/** Eventlistener for the message form, 
- * appointment form and book appointment button
- * 
- */
+
+
+// let formAction = msgForm['action'];
+// let pageTitle = document.title;
+
+// if (pageTitle = "Dr. Gabriel Codes") {
+//    formAction = "./formhandlers/messageFormHandler.php";
+// } else {
+//    formAction = "/formhandlers/messageFormHandler.php";
+// }
+
+function openNav() {
+   document.getElementById("side-nav").style.width = "90vw"
+}
+function closeNav() {
+   document.getElementById("side-nav").style.width = "0"
+}
+
+
 

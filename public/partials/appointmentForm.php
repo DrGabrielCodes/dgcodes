@@ -4,7 +4,7 @@
 <form id="appointment-form" action="/formhandlers/appointmentFormHandler.php" method="POST">
             <label for="select" class="services-label">
                 *Select a service or reason for appointment:
-                <select class="select-services form-item dropdown-menu">
+                <select name="purpose" class="select-services form-item dropdown-menu">
                     <option class="services-item"></option>
                     <option class="services-item">Responsive Website design</option>
                     <option class="services-item">Personal porfolio website</option>
@@ -38,6 +38,6 @@
                 <button type="submit" name="submit" class="button submit-btn" id="appointment-btn"> Book
                     Appointment </button>
             </label>
-            <div id="alert-msg"></div>
+            <div id="alert-message"></div>
 
         </form>

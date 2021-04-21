@@ -2,7 +2,7 @@
 * Appointment form variables 
 */
 const appointmentForm = document.querySelector('#appointment-form');
-let alertMessage = document.querySelector('#alert-msg');
+let alertMessage2 = document.querySelector('#alert-message');
 const appointmentDate = document.querySelector('#date');
 const time = document.querySelector('#appointment-time');
 const Name = document.querySelector('#name');
@@ -14,9 +14,9 @@ function submitForm(e) {
    console.log(appointmentForm)
    if (Name.value === '' || email.value === '' || time.value === '' || appointmentDate.value === '' || phoneNumber.value === '') {
       e.preventDefault();
-      alertMessage.classList.add('error')
-      alertMessage.innerHTML = 'Please complete the form enteries properly before submitting.'
-      setTimeout(() => alertMessage.remove(), 9000)
+      alertMessage2.classList.add('error')
+      alertMessage2.innerHTML = 'Please complete the form enteries properly before submitting.'
+      setTimeout(() => alertMessage2.remove(), 9000)
 
       console.log('fill the form properly');
       return false;

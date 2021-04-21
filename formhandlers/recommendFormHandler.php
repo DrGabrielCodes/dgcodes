@@ -1,5 +1,5 @@
 <?php
-$title = "Message Handler";
+$title = "Recommendation Handler";
 require_once './database.php';
 
 $submit = $_POST['submit'];
@@ -7,11 +7,15 @@ $successMessage = '';
 $errorMessage = '';
 
 $name = $_POST['name'];
-$visitor_email = $_POST['email'];
-$message = $_POST['message'];
+$socialLink = $_POST['social-link'];
+$recommendationMsg = $_POST['recommendation-msg'];
 $emailFrom = 'guest@drgabrielcodes.com';
-$subject = $_POST['subject'];
 $date = date('Y-m-d H:i:s');
+$consent = $_POST['consent'] ?? null;
+
+
+// var_dump($_POST);
+// exit;
 
 if (!isset($submit)) {
    $errorMessage = "Something went wrong. Your message was not sent. Please try again.";
@@ -22,20 +26,19 @@ if (!isset($submit)) {
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($submit)) {
    
-   if ($name || $message || $visitor_email) {
+
+   if ($name || $socialLink || $recommendationMsg) {
       
-      $statement2 = $pdo->prepare("INSERT INTO users_message (name, visitors_email, subject, message, email_from, date)  VALUES (:name, :visitors_email, :subject, :message, :email_from, :date  ) ");
-      $statement2->bindValue(':name', $name);
-      $statement2->bindValue(':visitors_email', $visitor_email);
-      $statement2->bindValue(':subject', $subject);
-      $statement2->bindValue(':message', $message);
-      $statement2->bindValue(':email_from', $emailFrom);
-      $statement2->bindValue(':date', $date);
-      $statement2->execute();
+      $statement3 = $pdo->prepare("INSERT INTO recommendation (name, social_link, recommendation_msg, consent)  VALUES (:fullname, :socialLlink, :recommendation) ");
+      $statement3->bindValue(':fullname', $name);
+      $statement3->bindValue(':socialLink', $socialLink);
+      $statement3->bindValue(':recommendation', $recommendationMsg);
+     // $statement->bindValue(':consentStatus', $consent);
+      $statement3->execute();
 
 
 
-      $successMessage = "Thank you " . $name . " for contacting us.  You have successfully sent a message to DGCodes. Expect a response soonest.  <br>";
+      $successMessage = "Thank you " . $name . " for your recommendation.  You have successfully sent a recommendation for DGCodes.  <br>";
    } else {
       $errorMessage = "Something went wrong. Your message was not sent successfully. Please try again.";
    }
