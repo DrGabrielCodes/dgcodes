@@ -52,7 +52,7 @@
     <div class="footer-body">
         <Nav class="footer-nav">
             <ul class="footer-nav-list">
-            <li class="footer-nav-list-items"> <a class="footer-nav-list-item" href="/index.php">Home</a></li>
+            <li class="footer-nav-list-items"> <a class="footer-nav-list-item" href="/public/index.php">Home</a></li>
                 <li class="footer-nav-list-items"><a class="footer-nav-list-item" href="/public/about-me.php">About</a>
                 </li>
                 <li class="footer-nav-list-items"><a class="footer-nav-list-item" href="/public/contact-me.php">Contact me </a></li>
@@ -68,7 +68,7 @@
     <div class="footer-copyright">
         <i> © Copyright 2021 Dr. Gabriel Codes. All rights
             reseverved.</i>
-        <div>Web design by <a href="/index.php" class="dr-gabriel-codes">
+        <div>Web design by <a href="/public/index.php" class="dr-gabriel-codes">
                 DrGabrielCodes</a>
                 <a class="btn button " href="/formhandlers/admin.php">Admin</a>
 

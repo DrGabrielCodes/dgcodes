@@ -29,7 +29,7 @@
             <div class="navigation-area side-nav" id="side-nav">
             <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
             <nav id="navigation-tabs">
-                <a class="nav-link nav-list-item" href="/index.php">Home</a>
+                <a class="nav-link nav-list-item" href="/public/index.php">Home</a>
                 <a class="nav-link nav-list-item" href="/public/about-me.php">About</a>
                     <a class="nav-link nav-list-item" href="/public/contact-me.php">Contact me</a>
             </nav>

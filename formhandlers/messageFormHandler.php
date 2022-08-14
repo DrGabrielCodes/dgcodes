@@ -59,7 +59,7 @@ require_once '../public/partials/header.php';
             <a href="/public/book-appointment.php">here</a> to go back to the appointment page
          </p>
          <p> Or click
-            <a href="/index.php">here</a> to go back to the homepage.
+            <a href="/public/index.php">here</a> to go back to the homepage.
          </p>
       </div>
    </section>
